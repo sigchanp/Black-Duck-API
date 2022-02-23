@@ -13,7 +13,6 @@ Making use of https://github.com/blackducksoftware/hub-rest-api-python
 
 Sample output:
 ```
-python "API License Inventory.py"
 [2022-02-23 12:12:07,549] {Client:51} INFO - Using a session with a 15.0 second timeout and up to 3 retries per request
 Processing licenses...
 [2022-02-23 12:12:07,550] {Authentication:56} WARNING - ssl verification disabled, connection insecure. do NOT use verify=False in production!
