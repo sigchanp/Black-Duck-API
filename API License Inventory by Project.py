@@ -1,6 +1,7 @@
 from blackduck import Client
 import logging
 import re
+import os
 from collections import Counter
 import csv
 
@@ -11,7 +12,7 @@ logging.basicConfig(
 
 # Please modify the token and base_url
 bd = Client(
-    token="MTNmNDY0NzItNGVjNS00Yzg0LgE5NWEtOWRaYzg3fzRjMjQtOmY1ZjRhMjM0LWZlZDUtNDliNC05NzkxLWUyY2JiNTk0Y2UyOA==",
+    token=os.environ.get('blackduck_token'),
     base_url="https://localhost",
     verify=False  # TLS certificate verification
 )
